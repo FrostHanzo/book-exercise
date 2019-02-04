@@ -49,7 +49,12 @@ class Book
     
     public void setRefNumber(String ref)
     {
+        if(ref.length() < 3)
+        {System.out.println(Errrrrrrrrrrrrrroooooorrrrrrrrrrr);
+        }else
+        {
         refNumber = ref;
+        }
     }
     
     public void printAuthor()
@@ -65,6 +70,12 @@ class Book
     public void printDetails()
     {
         System.out.println("Title:" +title+ "Author:" +author+ "Pages:" +pages);
+        if(refNumber == ("")){
+            System.out.println("Refernce Number: ZZZ");
+        }else
+        {
+            System.out.println("Refernce Number: " +refNumber);
+        }
     }    
 
 
